@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Coda+Caption&display=swap"); /*@import link from Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+
+body {
+  font-family: "Coda Caption"; /*name of font from @import*/
+  background-image: url("../images/cityblur1200.jpeg");
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  background-color: palegreen;
+
+  color: rgb(12, 12, 12);
+  font-size: 25px;
+  font-weight: 300;
+  padding-top: 25px;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  margin: 50px;
+  border: 2px solid #504caf;
+}
+
+.redwoods {
+  width: 100%;
+  background-position-y: center;
+}
+
+#name {
+  font-family: "Schoolbell";
+  font-size: 75px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+}
+
+.picture {
+  width: 300px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+
+#about {
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 360px;
+  padding-bottom: 30px;
+}
+
+#experience {
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 360px;
+  padding-bottom: 30px;
+}
+
+#projects {
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 360px;
+  padding-bottom: 60px;
+}
+
+#skills {
+  font-family: "Coda Caption";
+  font-size: 20px;
+  font-weight: lighter;
+  padding-bottom: 45px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: rgb(31, 18, 26); /*font color*/
+  background-color: rgb(167, 40, 156);
+  border: 5px solid rgb(8, 8, 8);
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 38px;
+  color: rgb(1, 1, 12);
+}
+
+.connect {
+  font-family: "Creepster";
+  font-size: 20px;
+  font-weight: 100;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 45px;
+  text-align: center;
+  color: rgb(20, 136, 26);
+  background-color: rgb(231, 140, 2);
+  border: 5px solid rgb(23, 160, 30);
+}
+
+.connect h2 {
+  font-size: 45px;
+}
+
+/*unvisited link*/
+a {
+  color: rgb(20, 136, 26);
+}
+
+/*hover over link*/
+a:hover {
+  background-color: #f2f537;
+}
+
+.leave-message {
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 280px;
+  margin-bottom: 10px;
+  border: 5px solid #f2f537;
+}
+
+#messages {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border: 5px solid #f2f537;
+}
+
+#date {
+  font-size: 20px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+/* MEDIA QUERIES*/
+@media (max-width: 600px) {
+  #date {
+    font-size: 50px;
+  }
+
+  #messages {
+    font-size: 80%;
+    width: 95%;
+  }
+
+  #name {
+    font-size: 40px;
+  }
+
+  body {
+    background-image: url("../Images/brickwall.jpg");
+    color: #f2f537;
+  }
+}
