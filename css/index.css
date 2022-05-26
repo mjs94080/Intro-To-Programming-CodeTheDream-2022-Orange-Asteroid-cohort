@@ -5,15 +5,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
 
 body {
-  font-family: "Coda Caption"; /*name of font from @import*/
+  /* font-family: "Schoolbell"; /*name of font from @import*/
   background-image: url("../images/cityblur1200.jpeg");
-  /*background-repeat: no-repeat;*/
   background-size: cover;
-  background-color: palegreen;
-
   color: rgb(12, 12, 12);
   font-size: 25px;
-  font-weight: 300;
   padding-top: 25px;
   padding-right: 10%;
   padding-left: 10%;
@@ -22,72 +18,110 @@ body {
   border: 2px solid #504caf;
 }
 
+#main-bars {
+  margin-top: 30px;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;*/
+}
+
+ul.nav-bars {
+  display: flex;
+  font-family: CodaCaption;
+  list-style-type: none; /*no bullet points*/
+  /*padding: 0px 50px;*/
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ul.nav-bars li {
+  display: inline-flex;
+  font-family: CodaCaption;
+  list-style-type: none; /*no bullet points*/
+  /*padding: 0px 50px;*/
+  flex-grow: 1;
+  text-align: center;
+}
+
+ul.nav-bars li a {
+  /*display: inline-flex;
+  font-family: CodaCaption;
+  list-style-type: none; /*no bullet points*/
+  /*padding: 0px 50px;
+  flex-grow: 1;*/
+  margin: auto;
+  text-align: center;
+}
+
+#redwood {
+  margin-bottom: 50px;
+}
+
 .redwoods {
-  width: 100%;
-  background-position-y: center;
+  display: flex;
+  width: 1000px;
+  height: 200px;
+  /*background-position-y: center;*/
 }
 
 #name {
   font-family: "Schoolbell";
-  font-size: 75px;
-  font-weight: bolder;
+  font-size: 65px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 22px;
-  padding-left: 20px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .picture {
-  width: 300px;
-  padding-right: 25px;
-  padding-bottom: 20px;
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /*border: 5px solid #f2f537;*/
 }
 
-#about {
-  font-size: 20px;
-  padding-right: 20px;
-  padding-left: 360px;
-  padding-bottom: 30px;
+#left,
+#right {
+  margin: 2px;
+  min-width: 49%;
 }
 
-#experience {
-  font-size: 20px;
-  padding-right: 20px;
-  padding-left: 360px;
-  padding-bottom: 30px;
-}
-
-#projects {
-  font-size: 20px;
-  padding-right: 20px;
-  padding-left: 360px;
-  padding-bottom: 60px;
-}
-
-#skills {
-  font-family: "Coda Caption";
+.skills {
+  display: flexbox;
+  font-family: CodaCaption;
   font-size: 20px;
   font-weight: lighter;
-  padding-bottom: 45px;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin-top: 35px;
   color: rgb(31, 18, 26); /*font color*/
   background-color: rgb(167, 40, 156);
   border: 5px solid rgb(8, 8, 8);
 }
 
-#skills h2 {
+.skills ul {
+  display: flexbox;
+  padding-right: 40px;
+  font-family: "TrebSuchet MS";
+  /*font-weight: bold;*/
+  list-style-type: none; /*take away bullets from JS*/
+}
+
+.skills ul i {
+  padding: 20px;
+}
+
+.skills h2 {
   text-align: center;
-  font-size: 38px;
+  font-size: 28px;
   color: rgb(1, 1, 12);
 }
 
 .connect {
+  display: flexbox;
   font-family: "Creepster";
   font-size: 20px;
-  font-weight: 100;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-top: 30px;
   padding-bottom: 45px;
   text-align: center;
   color: rgb(20, 136, 26);
@@ -95,13 +129,23 @@ body {
   border: 5px solid rgb(23, 160, 30);
 }
 
-.connect h2 {
-  font-size: 45px;
+.connect-header {
+  font-size: 25px;
 }
 
-/*unvisited link*/
+.links {
+  font-size: 45px;
+  display: flexbox;
+  align-items: center;
+}
+
+.links a {
+  margin: 20;
+  color: black;
+}
+
 a {
-  color: rgb(20, 136, 26);
+  text-decoration: none;
 }
 
 /*hover over link*/
@@ -109,12 +153,33 @@ a:hover {
   background-color: #f2f537;
 }
 
-.leave-message {
+#history {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  font-family: CodaCaption;
+  font-size: 25px;
+  margin-right: 180px;
+}
+
+.experience {
+  font-family: CodaCaption;
+  font-size: 25px;
+  margin-right: 180px;
+}
+
+.projects {
+  font-family: CodaCaption;
+  font-size: 25px;
+}
+
+#Leave-Message {
   font-size: 25px;
   text-align: center;
   padding: 5px;
-  margin-top: 280px;
-  margin-bottom: 10px;
+  margin-top: 30px;
   border: 5px solid #f2f537;
 }
 
@@ -122,34 +187,215 @@ a:hover {
   font-size: 20px;
   text-align: center;
   padding: 5px;
-  margin-top: 15px;
+  margin-top: 40px;
   margin-bottom: 30px;
   border: 5px solid #f2f537;
 }
 
-#date {
-  font-size: 20px;
+#messages ul {
+  font-family: "Trebuchet MS";
+  list-style-type: none;
+  color: white;
+}
+
+#messages ul a {
+  font-family: "TrebSuchet MS";
+  color: black;
+  padding: 10px;
+}
+
+#messages ul li button {
+  margin-left: 20px;
+}
+
+footer {
+  font-size: 30px;
   padding-top: 15px;
   text-align: center;
 }
 
-/* MEDIA QUERIES*/
-@media (max-width: 600px) {
-  #date {
-    font-size: 50px;
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+  #main-bars {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  #messages {
-    font-size: 80%;
-    width: 95%;
+  ul.nav-bars {
+    display: flex;
+    font-family: CodaCaption;
+    list-style-type: none; /*no bullet points*/
+    /*padding: 0px 50px;*/
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .redwoods {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
   }
 
   #name {
-    font-size: 40px;
+    display: flexbox;
+    flex-direction: column;
+    font-family: "Schoolbell";
+    font-size: 150%;
+    text-align: center;
   }
 
-  body {
-    background-image: url("../Images/brickwall.jpg");
-    color: #f2f537;
+  .picture {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  #left,
+  #right {
+    flex-grow: 1;
+    /*margin: 2px;
+  min-width: 49%;*/
+  }
+
+  .skills {
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+  }
+
+  .connect {
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+  }
+
+  .connect-header {
+    font-size: 100%;
+  }
+
+  #history {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .about {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0%;
+    font-size: 20px;
+  }
+
+  .experience {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0%;
+    font-size: 20px;
+  }
+
+  .projects {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0%;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  ul.nav-bars {
+    display: flex;
+    font-family: CodaCaption;
+    list-style-type: none; /*no bullet points*/
+    /* padding: 0px 50px;*/
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .redwoods {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+
+  #name {
+    display: flexbox;
+    flex-direction: column;
+    font-family: "Schoolbell";
+    font-size: 150%;
+    text-align: center;
+  }
+
+  .picture {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container {
+    display: flexbox;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .skills {
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+  }
+
+  .connect {
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+  }
+
+  .connect-header {
+    font-size: 100%;
+  }
+
+  #history {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .about {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0%;
+    font-size: 20px;
+  }
+
+  .experience {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0%;
+    font-size: 20px;
+  }
+
+  .projects {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0%;
+    font-size: 20px;
   }
 }
