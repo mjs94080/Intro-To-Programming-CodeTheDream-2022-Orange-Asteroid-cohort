@@ -7,14 +7,14 @@ const footer = document.querySelector("footer");
 console.log(footer);
 
 let copyright = document.createElement("p");
-copyright.innerHTML = `MacKenzie ${thisYear}`; //template literal
+copyright.innerHTML = `&copy MacKenzie ${thisYear}`; //template literal
 footer.appendChild(copyright);
 console.log(copyright);
 
-skills = ["One", "Two", "Three", "Four"];
+skills = ["HTML", "CSS", "JAVASCRIPT", "AWS CLOUD", "GIT"];
 console.log(skills);
 
-skillsSection = document.querySelector("#skills");
+skillsSection = document.querySelector(".skills");
 console.log(skillsSection);
 
 skillsList = skillsSection.querySelector("ul");
