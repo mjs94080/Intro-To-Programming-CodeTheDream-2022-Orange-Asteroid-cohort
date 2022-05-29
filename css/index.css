@@ -122,7 +122,7 @@ ul.nav-bars li a {
   font-family: "Creepster";
   font-size: 20px;
   margin-top: 30px;
-  padding-bottom: 45px;
+  padding-bottom: 10px;
   text-align: center;
   color: rgb(20, 136, 26);
   background-color: rgb(231, 140, 2);
@@ -153,6 +153,29 @@ a:hover {
   background-color: #f2f537;
 }
 
+#projects {
+  border: 5px solid #f2f537;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+#projects h2 {
+  font-family: CodaCaption;
+  font-size: 35px;
+}
+
+#projects ul {
+  font-family: CodaCaption;
+  font-size: 25px;
+  font-weight: bolder;
+  list-style-type: none;
+}
+
+#projects ul li {
+  padding: 20px;
+}
+
 #history {
   display: flex;
   justify-content: center;
@@ -170,7 +193,7 @@ a:hover {
   margin-right: 180px;
 }
 
-.projects {
+.hobbies {
   font-family: CodaCaption;
   font-size: 25px;
 }
@@ -306,7 +329,7 @@ footer {
     font-size: 20px;
   }
 
-  .projects {
+  .hobbies {
     display: flexbox;
     flex-wrap: wrap;
     flex-direction: column;
@@ -391,7 +414,7 @@ footer {
     font-size: 20px;
   }
 
-  .projects {
+  .hobbies {
     display: flexbox;
     flex-wrap: wrap;
     flex-direction: column;
