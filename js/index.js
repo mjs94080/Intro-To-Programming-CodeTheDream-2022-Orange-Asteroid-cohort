@@ -11,7 +11,7 @@ copyright.innerHTML = `&copy MacKenzie ${thisYear}`; //template literal
 footer.appendChild(copyright);
 console.log(copyright);
 
-skills = ["HTML", "CSS", "JAVASCRIPT", "AWS CLOUD", "GIT"];
+skills = ["HTML", "CSS", "JAVASCRIPT", "AWS CLOUD", "GIT", "AJAX", "FETCH API"];
 console.log(skills);
 
 skillsSection = document.querySelector(".skills");
