@@ -91,9 +91,9 @@ ul.nav-bars li a {
 .skills {
   display: flexbox;
   font-family: CodaCaption;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: lighter;
-  margin-top: 35px;
+  margin-top: 40px;
   color: rgb(31, 18, 26); /*font color*/
   background-color: rgb(167, 40, 156);
   border: 5px solid rgb(8, 8, 8);

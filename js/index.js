@@ -11,7 +11,7 @@ copyright.innerHTML = `&copy MacKenzie ${thisYear}`; //template literal
 footer.appendChild(copyright);
 console.log(copyright);
 
-skills = ["HTML", "CSS", "JAVASCRIPT", "AWS CLOUD", "GIT", "AJAX", "JSON"];
+skills = ["HTML", "CSS", "JAVASCRIPT", "AWS CLOUD", "GIT"];
 console.log(skills);
 
 skillsSection = document.querySelector(".skills");
@@ -91,51 +91,67 @@ messageForm.addEventListener("submit", (event) => {
  Finally, call the send method on your githubRequest object to actually send 
  the request.
  Save and refresh your browser*/
-githubRequest = new XMLHttpRequest();
+
+/*githubRequest = new XMLHttpRequest();
 githubRequest.open("GET", "https://api.github.com/users/mjs94080/repos");
-githubRequest.send();
+githubRequest.send();*/
 
 /*Handle Response from Server*/
 
 /*Below the last line of code you just wrote, add a "load" event listener 
-  on your githubRequest object and pass the necessary arguments
- 1. event: the event that is being handled (in this case, "load")
- 2. callback: the function that runs when this event occurs
- Inside the callback function you just created, parse the response and store
- it in a variable named repositories
- hint: JSON.parse(this.response)
- Log the value of repositories in the console*/
+   on your githubRequest object and pass the necessary arguments
+  1. event: the event that is being handled (in this case, "load")
+  2. callback: the function that runs when this event occurs
+  Inside the callback function you just created, parse the response and store
+  it in a variable named repositories
+  hint: JSON.parse(this.response)
+  Log the value of repositories in the console*/
 
-githubRequest.addEventListener("load", () => {
+/*githubRequest.addEventListener("load", () => {
   const repositories = JSON.parse(githubRequest.response);
-  console.log(repositories);
+  console.log(repositories);*/
 
-  /*Display Repositories in List*/
+/*Display Repositories in List*/
 
-  /* Using "DOM Selection", select the #projects section by id and 
-  store it in a variable named projectSection.*/
-  const projectSection = document.getElementById("projects");
+/* Using "DOM Selection", select the #projects section by id and 
+   store it in a variable named projectSection.*/
+/*const projectSection = document.getElementById("projects");*/
 
-  /*Using "DOM Selection", query the projectSection (instead of the 
-  entire document) to find the <ul> element and store it in a variable
-  named projectList.*/
-  const projectList = projectSection.querySelector("ul");
+/*Using "DOM Selection", query the projectSection (instead of the 
+   entire document) to find the <ul> element and store it in a variable
+   named projectList.*/
+/* const projectList = projectSection.querySelector("ul");*/
 
-  /*Create a for loop to iterate over your repositories Array, starting
-   at index 0.
-   Inside the loop, create a new list item (li) element and store it in a 
-   variable named project.
-   hint: createElement method*/
-  for (let i = 0; i < repositories.length; i++) {
-    const project = document.createElement("li");
+/*Create a for loop to iterate over your repositories Array, starting
+    at index 0.
+    Inside the loop, create a new list item (li) element and store it in a 
+    variable named project.
+    hint: createElement method*/
+/*for (let i = 0; i < repositories.length; i++) {
+    const project = document.createElement("li");*/
 
-    /* On the next line, set the inner text of your project variable to
-  the current Array element's name property.
-  hint: access the Array element using bracket notation*/
-    project.innerText = repositories[i].name;
+/* On the next line, set the inner text of your project variable to
+   the current Array element's name property.
+   hint: access the Array element using bracket notation*/
+/* project.innerText = repositories[i].name;*/
 
-    /*On the next line, append the project element to the projectList element
-   hint: appendChild method*/
-    projectList.appendChild(project);
+/*On the next line, append the project element to the projectList element
+    hint: appendChild method*/
+/* projectList.appendChild(project);
   }
-});
+}); */
+
+fetch("https://api.github.com/users/mjs94080/repos")
+  .then((response) => response.json())
+  .then((repositories) => {
+    /*const repositories = JSON.parse(githubRequest.response);
+      console.log(repositories);*/
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  });
